@@ -171,8 +171,7 @@
 	/*CATEGORY UPDATE PORTION START*/
 	
 	if(isset($_POST['category_update'])){
-		//echo "ok";
-		//die();
+
 		$category_name = $_POST['category_name'];
 		$id = $_POST['id'];
 		$error = 0;
@@ -373,7 +372,7 @@
 	     $add_to_cart['product_id'] = $_POST['product_id'];
 	     $add_to_cart['qty']    = $_POST['qty'];
 	     $add_to_cart['pro_image']  = $_POST['pro_image'];
-	   
+		
 	       if(isset($_SESSION['cart_item'])){
 
 	            foreach ($_SESSION['cart_item'] as $key => $value) {
@@ -400,6 +399,10 @@
 	       header('location:../frontend/cart.php');
 	}
 
+	// if (isset($_POST['remove_cart'])) {
+	// 	unset($_SESSION['pro_name'][$key]);
+	// }
+
 	/*ADD TO CART PORTION END*/
 	
 
@@ -424,10 +427,141 @@
 
 	}
 
+
+	if(isset($_GET['wishlist_delete_id'])){
+		$id=$_GET['wishlist_delete_id'];
+		$connection = db_config::DBConnect();
+		$sql = "delete from wishlist where id='$id'";
+		$response = $connection->delete($sql);
+		$_SESSION["wishlist_msg"] = "Deleted successfully";
+		header('location:../frontend/wishlist.php');
+		
+	}
+
+
 	/*WISHLIST PORTION END*/
 
-
-
 	
+	if(isset($_POST['con_submit'])){
+		$con_name = $_POST['con_name'];
+		$con_mail = $_POST['con_mail'];
+		$con_subject = $_POST['con_subject'];
+		$con_message = $_POST['con_message'];
+		$error = 0;
+		if($con_name==""){
+			$error = $error + 1;
+		}
+		if($con_mail==""){
+			$error = $error + 1;
+		}
+		if($con_subject==""){
+			$error = $error + 1;
+		}
+		if($con_message==""){
+			$error = $error + 1;
+		}
+		
+		if($error==0){
+				
+			$connection = db_config::DBConnect();
+			$sql = "INSERT INTO myguests VALUES('$con_name','$con_mail','$con_subject','$con_message')";
+			$response = $connection->insert($sql);
+			$_SESSION["con_msg"] = "Information successfully saved";
+			header('location:../frontend/contact.php');
+		}else{
+			$_SESSION["con_msg"] = "error input";
+			header('location:../frontend/contact.php');
+		}
+	}
+	
+	
+	/* REVIEW PART START */
+	
+	if(isset($_POST['submit_review'])){
+		$re_name = $_POST['re_name'];
+		$re_email = $_POST['re_email'];
+		$re_review = $_POST['re_review'];
+		$error = 0;
+		if($re_name==""){
+			$error = $error + 1;
+		}
+		if($re_email==""){
+			$error = $error + 1;
+		}
+		if($re_review==""){
+			$error = $error + 1;
+		}
+		
+		if($error==0){
+				
+			$connection = db_config::DBConnect();
+			$sql = "INSERT INTO persons VALUES('','$re_name','$re_email','$re_review')";
+			$response = $connection->insert($sql);
+			$_SESSION["rev_msg"] = "Review sent successfully";
+			header('location:../frontend/index.php');
+		}
+	}
+	
+	/* REVIEW PART END */
+	
+	
+	
+	/* NEWSLETTER SUBSCRIBTION START */
+	
+	if(isset($_POST['news_submit'])){
+		$news_email=$_POST['news_email'];
+		$connection = db_config::DBConnect();
+		$sql = "INSERT INTO newsletter VALUES('','$news_email')";
+		$response = $connection->insert($sql);
+		$_SESSION["news_msg"] = "email sent successfully";
+		header('location:../frontend/index.php');
+	}
+	
+	
+	/* NEWSLETTER SUBSCRIBTION END */
+	
+	
+	/*ACCOUNT DETAILS UPDATE START*/
+	
+	if(isset($_POST['account_info_update'])){
+		$user_fullname=$_POST['user_fullname'];
+		$user_phoneno=$_POST['user_phoneno'];
+		$user_email=$_POST['user_email'];
+		$user_present_address=$_POST['user_present_address'];
+		$user_permanent_address=$_POST['user_permanent_address'];
+		
+		
+		$connection = db_config::DBConnect();
+		$sql = "UPDATE account_details SET phone_no='$user_phoneno', fullname='$user_fullname', present_adress='$user_present_address', permanent_adress='$user_permanent_address', email='$user_email' where id='1'";
+		$response = $connection->insert($sql);
+		$_SESSION["user_info_msg"] = "Data updated successfully";
+		header('location:../frontend/my-account.php');
+	}
+	
+	
+	/*ACCOUNT DETAILS UPDATE END*/
+	
+	
+	/* CONFIRM ORDER PAYMENT START */
+	
+	if(isset($_POST['confirm_order'])){
+		//print_r($_POST);
+		//die();
+		$card_user_name=$_POST['card_user_name'];
+		$card_number=$_POST['card_number'];
+		$month=$_POST['month'];
+		$year=$_POST['year'];
+		$cvv=$_POST['cvv'];
+		
+		$connection = db_config::DBConnect();
+		$sql = "INSERT INTO payment_info VALUES('','$card_user_name','$card_number','$month','$year','$cvv')";
+		$connection->insert($sql);
+		$_SESSION["payment_msg"] = "Payment successfully done!";
+		header('location:../frontend/mycheckout.php');
+	}
+	
+	
+	
+	/* CONFIRM ORDER PAYMENT END */
 	
 ?>

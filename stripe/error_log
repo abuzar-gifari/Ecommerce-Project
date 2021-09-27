@@ -1,0 +1,55 @@
+[13-Feb-2021 04:25:07 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_sfPY8hqctuLw9W) Invalid integer: 0.5
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:26:37 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_rDUHj4Gqz2I9U4) You cannot use a Stripe token more than once: tok_1IKFgrJhvdfPu4RwQdE0ylmF.
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:27:09 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_Zy3g8zA4aa6ok3) Invalid integer: 0.5
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:29:05 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_7yA3fpoYD17XNv) Invalid integer: 0.5
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:32:06 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_bWdNAmHpPhf1tU) You cannot use a Stripe token more than once: tok_1IKFkhJhvdfPu4RwFJWIfaHC.
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:32:21 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_rknKtS7NsTIeQR) Invalid integer: 0.5
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:34:13 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_h8rpEm3Rcf97bA) You cannot use a Stripe token more than once: tok_1IKFnrJhvdfPu4RwRgNsGDtV.
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:34:35 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/sherajul/public_html/ecommerce/stripe/DBController.php on line 14
+[13-Feb-2021 04:34:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on bool in /home/sherajul/public_html/ecommerce/stripe/DBController.php:59
+Stack trace:
+#0 /home/sherajul/public_html/ecommerce/stripe/index.php(28): DBController->insert('INSERT INTO tbl...', 'ssdssss', Array)
+#1 {main}
+  thrown in /home/sherajul/public_html/ecommerce/stripe/DBController.php on line 59
+[13-Feb-2021 04:36:10 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_IKPm8Gs8ZCnCZ5) You cannot use a Stripe token more than once: tok_1IKFq1JhvdfPu4RwBQ4rea7J.
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:36:13 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_9WkgE0lfyjzQF4) You cannot use a Stripe token more than once: tok_1IKFq1JhvdfPu4RwBQ4rea7J.
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:38:48 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, first array member is not a valid class name or object in /home/sherajul/public_html/ecommerce/stripe/DBController.php on line 54
+[13-Feb-2021 04:38:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /home/sherajul/public_html/ecommerce/stripe/DBController.php:61
+Stack trace:
+#0 /home/sherajul/public_html/ecommerce/stripe/index.php(28): DBController->insert('INSERT INTO tbl...', 'ssdssss', Array)
+#1 {main}
+  thrown in /home/sherajul/public_html/ecommerce/stripe/DBController.php on line 61
+[13-Feb-2021 04:43:08 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_qQ6nUsOqngAdCA) No such token: 'tok_1IKFyJJhvdfPu4RwU9Ggj0jR'
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:43:20 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_sxtmBMQ18rcpZ1) No such token: 'tok_1IKFvtJhvdfPu4RwTRqPb1Wu'
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 04:43:49 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_2lyfejnobXrq88) Amount must convert to at least 50 cents. $0.50 converts to approximately €0.41.
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 10:12:44 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_fjF8VflIs9E0Op) Invalid integer: {:"0"=>"2000", :"1"=>"2700"}
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 10:13:49 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_Nkcp8eHzT1joQb) Amount must convert to at least 50 cents. ৳47.00 converts to approximately €0.46.
+  thrown in /home/sherajul/public_html/ecommerce/stripe/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[13-Feb-2021 10:30:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php on line 6
+[13-Feb-2021 10:30:10 UTC] PHP Notice:  Undefined index: login in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php on line 59
+[13-Feb-2021 10:30:10 UTC] PHP Notice:  Trying to get property 'id' of non-object in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php on line 59
+[13-Feb-2021 10:30:10 UTC] PHP Fatal error:  Uncaught Error: Class 'PhpPot\Service\db_config' not found in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php:61
+Stack trace:
+#0 /home/sherajul/public_html/ecommerce/stripe/index.php(10): PhpPot\Service\StripePayment->chargeAmountFromCard(Array)
+#1 {main}
+  thrown in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php on line 61
+[13-Feb-2021 10:32:26 UTC] PHP Notice:  Undefined index: login in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php on line 59
+[13-Feb-2021 10:32:26 UTC] PHP Notice:  Trying to get property 'id' of non-object in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php on line 59
+[13-Feb-2021 10:32:26 UTC] PHP Fatal error:  Uncaught Error: Class 'PhpPot\Service\db_config' not found in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php:61
+Stack trace:
+#0 /home/sherajul/public_html/ecommerce/stripe/index.php(10): PhpPot\Service\StripePayment->chargeAmountFromCard(Array)
+#1 {main}
+  thrown in /home/sherajul/public_html/ecommerce/stripe/StripePayment.php on line 61

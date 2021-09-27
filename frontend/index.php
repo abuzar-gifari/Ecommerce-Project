@@ -19,7 +19,7 @@
                                     
                                     while($resource_obj = $resource_data->fetch_object()){  ?>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="product-list.php?cat_id=<?php echo $resource_obj->id; ?>"><i class="fa fa-home"></i><?php echo $resource_obj->name ?></a>
+                                            <a  style="font-family: 'RocknRoll One', sans-serif;" class="nav-link" href="product-list.php?cat_id=<?php echo $resource_obj->id; ?>"><i class="fa fa-bullseye" aria-hidden="true"></i><?php echo $resource_obj->name ?></a>
                                         </li>
                                 <?php } ?>
                                 
@@ -29,24 +29,24 @@
                     <div class="col-md-6">
                         <div class="header-slider normal-slider">
                             <div class="header-slider-item">
-                                <img src="img/slider-1.jpg" alt="Slider Image" />
+                                <img src="img/laptop2.jpg" alt="Slider Image" style="height:400px;"/>
                                 <div class="header-slider-caption">
-                                    <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">Do you like this Laptop?</p>
+                                    <a class="btn" href="cart.php" target="_blank"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                             <div class="header-slider-item">
-                                <img src="img/slider-2.jpg" alt="Slider Image" />
+                                <img src="img/TV.jpg" alt="Slider Image" style="height:400px;width:600px;"/>
                                 <div class="header-slider-caption">
-                                    <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">Do you like this TV?</p>
+                                    <a class="btn" href="cart.php" target="_blank"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                             <div class="header-slider-item">
-                                <img src="img/slider-3.jpg" alt="Slider Image" />
+                                <img src="img/ac.webp" alt="Slider Image"  style="height:400px;"/>
                                 <div class="header-slider-caption">
-                                    <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">Do you like this A.C?</p>
+                                    <a class="btn" href="cart.php" target="_blank"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -56,13 +56,13 @@
                             <div class="img-item">
                                 <img src="img/category-1.jpg" />
                                 <a class="img-text" href="">
-                                    <p>Some text goes here that describes the image</p>
+                                    <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">LIKE IT?</p>
                                 </a>
                             </div>
                             <div class="img-item">
                                 <img src="img/category-2.jpg" />
                                 <a class="img-text" href="">
-                                    <p>Some text goes here that describes the image</p>
+                                    <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">LIKE IT?</p>
                                 </a>
                             </div>
                         </div>
@@ -94,36 +94,36 @@
                     <div class="col-lg-3 col-md-6 feature-col">
                         <div class="feature-content">
                             <i class="fab fa-cc-mastercard"></i>
-                            <h2>Secure Payment</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                            <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">Secure Payment</p><br>
+                            <p style="font-family: 'RocknRoll One', sans-serif;">
+                                Our payment service is so secure.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 feature-col">
                         <div class="feature-content">
                             <i class="fa fa-truck"></i>
-                            <h2>Worldwide Delivery</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                            <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">Worldwide Delivery</p><br>
+                            <p style="font-family: 'RocknRoll One', sans-serif;">
+                                Our Customer Care Ninjas Are Always There For You
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 feature-col">
                         <div class="feature-content">
                             <i class="fa fa-sync-alt"></i>
-                            <h2>90 Days Return</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                            <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">90 Days Return</p><br>
+                            <p style="font-family: 'RocknRoll One', sans-serif;">
+								Costco will accept returns within 90 days
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 feature-col">
                         <div class="feature-content">
                             <i class="fa fa-comments"></i>
-                            <h2>24/7 Support</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                            <p style="font-family: 'RocknRoll One', sans-serif;font-size:20px;">24/7 Support</p><br>
+                            <p style="font-family: 'RocknRoll One', sans-serif;">
+                                We'll treat your customers like they're ours.
                             </p>
                         </div>
                     </div>
@@ -190,10 +190,10 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <h1 style="font-family:tahoma;letter-spacing:0.1rem;">Call us for any Queries</h1>
+                        <p style="font-family: 'RocknRoll One', sans-serif;font-size:30px;">Call us for any Queries</p>
                     </div>
                     <div class="col-md-6">
-                        <a href="tel:0123456789">+01783753653</a>
+                        <a  style="font-family: 'RocknRoll One', sans-serif;font-size:25px;" href="tel:0123456789">+01783753653</a>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
         <div class="featured-product product">
             <div class="container-fluid">
                 <div class="section-header">
-                    <h1 style="font-family:tahoma;">Our Featured Product</h1>
+                    <h1 style="font-family: 'RocknRoll One', sans-serif;font-size:30px;">Our Featured Product</h1>
                 </div>
                 <div class="row align-items-center product-slider product-slider-4">
         
@@ -261,13 +261,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 style="font-family:tahoma;">Subscribe Our Newsletter</h1>
+                        <h1 style="font-family: 'RocknRoll One', sans-serif;font-size:30px;">Subscribe Our Newsletter</h1>
                     </div>
                     <div class="col-md-6">
+					<form action="../function/functions.php" method="post">
                         <div class="form">
-                            <input type="email" value="Your email here">
-                            <button>Submit</button>
+                            <input type="email" placeholder="Your email here" name="news_email">
+                            <button name="news_submit">Submit</button>
                         </div>
+					</form>
                     </div>
                 </div>
             </div>

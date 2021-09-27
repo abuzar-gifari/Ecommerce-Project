@@ -43,7 +43,8 @@
               <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Action</th>
+                <th>Update</th>
+                <th>Delete</th>
               </tr>
               
                 <?php 
@@ -54,8 +55,12 @@
                     <tr>
                       <td><?php echo $resource_obj->id; ?></td>
                       <td><?php echo $resource_obj->name; ?></td>
-                      <td><a href="cat_edit.php?id=<?php echo $resource_obj->id; ?>">Edit</a>
-                        <a onclick="deletealert(<?php echo $resource_obj->id; ?>)">Delete</a></td>
+                      <td>
+						<a href="cat_edit.php?id=<?php echo $resource_obj->id; ?>">Edit</a>
+					  </td>
+					  <td>
+                        <a onclick="deletealert(<?php echo $resource_obj->id; ?>)">Delete</a>  
+					  </td>
                     </tr>
                  <?php } ?>
             </table>

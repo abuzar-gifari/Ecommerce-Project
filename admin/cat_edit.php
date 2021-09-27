@@ -1,7 +1,7 @@
 <?php include('layout/header.php'); ?>
-  <!-- Content Wrapper. Contains page content -->
+
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -22,10 +22,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        
-        <!-- /.row -->
-        <!-- Main row -->
+
         <div class="row">
           <!-- Left col -->
           <section class="col-lg-12 connectedSortable">
@@ -48,13 +45,14 @@
               <input type="hidden" name="id" value="<?php echo $resource_obj->id; ?>">
               <input type="submit" name="category_update">
             </form>
-            <!-- /.card -->
+
           </section>
-          <!-- right col -->
+
         </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
+
+      </div>
+
     </section>
-    <!-- /.content -->
+
   </div>
 <?php include('layout/footer.php'); ?>

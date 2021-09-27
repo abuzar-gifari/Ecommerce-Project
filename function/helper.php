@@ -2,6 +2,12 @@
  	include('db_config.php');
 
  	class Helper{
+	
+		public static function HelperConnect(){
+			$Helper = new Helper;
+			return $Helper;
+		}
+
 
  		public function CategoryIDToName($id){
 
@@ -10,8 +16,11 @@
 	        $connection = db_config::DBConnect();
 	        $resource_data = $connection->view($sql);
 	        $resource_obj = $resource_data->fetch_object();
+			
 	        return $resource_obj;
  		}
+		
+		
  		public function ProductIDToImage($id){
 
 			$connection = db_config::DBConnect();
@@ -21,6 +30,8 @@
 	        
 	        return $resource_data;
  		}
+		
+		
  		public function ProductIDToProductAllInfo($id){
 
 			$connection = db_config::DBConnect();
@@ -30,10 +41,9 @@
 	        
 	        return $resource_data;
  		}
-		public static function HelperConnect(){
-			$Helper = new Helper;
-			return $Helper;
-		}
+		
+		
  	}
+
 
 ?>
